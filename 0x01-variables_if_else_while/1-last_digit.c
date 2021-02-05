@@ -1,24 +1,30 @@
 #include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 /**
-* main - Entry point
+*main - Select a random number and print the last digital
 *
-* Operadores condicionaltes
+*Return: 0 on success
 */
 int main(void)
 {
 int n;
-printf("Ingresa un numero\n");
-scanf("%d", &n);
-if (n < 0)
+char last[] = "Last digit of";
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+printf("%s %d is %d and is ", last, n, n % 10);
+if (n % 10 > 5)
 {
-printf("is negative\n");
+printf("greater than 5\n");
 }
-else if (n == 0)
+else if (n % 10 == 0)
 {
-printf("is zero\n");
+printf("0\n");
 }
 else
-printf("is positive\n");
+{
+printf("less than 6 and not 0\n");
+}
 return (0);
 }
+
