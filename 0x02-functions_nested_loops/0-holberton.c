@@ -1,6 +1,9 @@
 #include "holberton.h"
-
-int main (void)
+/**
+* main- prints the string "Holberton" from a character array.
+* Return: 0 on success.
+*/
+int main(void)
 {
 _putchar('H');
 _putchar('o');
@@ -12,6 +15,6 @@ _putchar('t');
 _putchar('o');
 _putchar('n');
 _putchar('\n');
-
- return (0);
+return (0);
 }
+
