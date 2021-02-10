@@ -2,7 +2,7 @@
 
 /**
 * main - causes an infinite loop
-* Return: 0 
+* Return: 0 la variable i nunca se incrmenta dentro del loop 
 */
 
 int main(void)
@@ -13,7 +13,7 @@ int main(void)
 
         i = 0;
 
-        while (i < 10)/*la variable i nunca se incrmenta dentro del loop*/
+        while (i < 10)
         {
                 putchar(i);
         }
