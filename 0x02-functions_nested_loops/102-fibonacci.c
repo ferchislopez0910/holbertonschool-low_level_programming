@@ -7,9 +7,9 @@
 int main(void)
 
 {
-unsigned long i, t1 = 1, t2 = 2, rest;
+long int i, t1 = 1, t2 = 2, rest;
 
-for (i = 1; i <= 50; ++i)
+for (i = 1; i < 50; ++i)
 {
 printf("%lu, ", t1);
 rest = t1 + t2;
