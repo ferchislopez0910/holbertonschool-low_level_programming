@@ -1,13 +1,13 @@
 #include "holberton.h"
 
 /**
-* print_rev - function that prints a string, in reverse.
+* rev_string - function that prints a string.
 *
 * @s: its a ptr
-* Return: 0.
+*
 */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int a = 0;
 	int b;
