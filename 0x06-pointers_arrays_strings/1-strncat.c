@@ -20,6 +20,8 @@ char *_strncat(char *dest, char *src, int n)
 	for (b = 0; b < n && src[b] != '\0'; b++)
 	{
 		*(dest + a) = *(src + b);
+		a++;
+		b++;
 	}
 	return (dest);
 }
