@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 int is_palindrome_(char *s, int length, int start);
 
 /**
@@ -11,10 +12,12 @@ int is_palindrome_(char *s, int length, int start);
  */
 int is_palindrome_(char *s, int length, int start)
 {
+	if (start >= length)
+		return (1);
 	if (s[start] != s[length - 1])
 		return (0);
-	if (s[start] == s[length])
-		return (is_palindrome_(s, --length, ++start));
+	return (is_palindrome_(s, --length, ++start));
+
 	return (1);
 }
 
