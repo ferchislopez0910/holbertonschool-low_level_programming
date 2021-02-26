@@ -1,6 +1,7 @@
 #include "holberton.h"
+int primenum(int a, int b);
 /**
- * is_prime_number - function recursive that help a resolve point.
+ * primenum - function recursive that help a resolve point.
  *
  * @a: number to determine if prime
  * @b: number to check if divisor
