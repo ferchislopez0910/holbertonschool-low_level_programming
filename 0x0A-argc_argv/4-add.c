@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		{
 			sum = sum + atoi(argv[i]);
 		}
-		else 
+		else
 		{
 			printf("Error\n");
 			return (1);
@@ -44,7 +44,7 @@ int dig(char *n)
 
 	while (n[a] != '\0')
 	{
-		if(isdigit(n[a]))
+		if (isdigit(n[a]))
 		{
 			a++;
 		}
