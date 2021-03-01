@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <ctype.h>
+int dig(char *n);
 /**
  * main - check the code for Holberton School students.
  * @argc: contador
@@ -16,17 +17,41 @@ int main(int argc, char *argv[])
 	{}
 	while (i < argc)
 	{
-		if (*argv[i] >= 48 && *argv[i] < 58)
+		if (dig(argv[i]))
 		{
 			sum = sum + atoi(argv[i]);
 		}
-		else
+		else 
 		{
 			printf("Error\n");
-		return (1);
+			return (1);
 		}
-	i++;
+		i++;
 	}
 	printf("%d\n", sum);
 	return (0);
+}
+
+/**
+ * dig - check the code for Holberton School students.
+ * @n: str
+ * Return: 0, 1, Error.
+ */
+
+int dig(char *n)
+{
+	int a = 0;
+
+	while (n[a] != '\0')
+	{
+		if(isdigit(n[a]))
+		{
+			a++;
+		}
+		else
+		{
+			return (0);
+		}
+	}
+	return (1);
 }
