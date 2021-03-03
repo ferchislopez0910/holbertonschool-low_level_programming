@@ -34,13 +34,13 @@ char *_strdup(char *str)
 	{
 		j = _strlen(str);
 		ptr = (char *)malloc(j * sizeof(char) + 1);
-		for (k = 0; str[k] != '\0'; k++)
-		{
-			ptr[k] = str[k];
-		}
 		if (ptr == NULL)
 		{
 			return (0);
+		}
+		for (k = 0; str[k] != '\0'; k++)
+		{
+			ptr[k] = str[k];
 		}
 		return (ptr);
 	}
