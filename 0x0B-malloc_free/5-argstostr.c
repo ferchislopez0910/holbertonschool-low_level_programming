@@ -3,8 +3,8 @@
 #include "holberton.h"
 /**
  * argstostr - main entry
- * @ac: int input
- * @av: double pointer array
+ * @ac: ma
+ * @av: doublear pointer
  * Return: 0
  */
 char *argstostr(int ac, char **av)
