@@ -5,7 +5,7 @@
 /**
  * create_array - function that creates an array of chars
  * @size: the size of the memory to print
- *
+ * @c: bytes
  * Return: Nothing.
  */
 
