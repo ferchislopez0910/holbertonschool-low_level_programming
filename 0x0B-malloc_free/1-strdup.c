@@ -1,11 +1,13 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
 * _strlen - function that returns a pointer to a newly
 * @str: string
 * Return: str copy
 **/
+
 int  _strlen(char *str)
 {
 	int a;
