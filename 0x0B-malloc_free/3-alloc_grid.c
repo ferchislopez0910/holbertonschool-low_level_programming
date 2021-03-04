@@ -28,8 +28,6 @@ int **alloc_grid(int width, int height)
 	if (mat == NULL)
 	{
 		return (NULL);
-		free(mat[i]);
-	free(mat);
 	}
 
 	for (i = 0; i < height ; i++)
@@ -49,4 +47,6 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	return (mat);
+	free(mat[i]);
+	free(mat);
 }
