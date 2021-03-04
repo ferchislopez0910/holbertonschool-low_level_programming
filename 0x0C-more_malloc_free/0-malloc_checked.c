@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
-* malloc_checked -  function that allocates memory using 
+* malloc_checked - function that allocates memory
 * @b: unisigned integer
 * Return: str.
 */
