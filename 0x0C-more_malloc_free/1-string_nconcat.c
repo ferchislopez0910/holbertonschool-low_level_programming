@@ -32,6 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			l[i] = s1[i];
 		for (j = 0; s2[j] != '\0'; j++)
 			l[i + j] = s2[j];
+			l[i + j] = '\0';
 	}
 	else
 	{
@@ -42,7 +43,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			l[m] = s1[m];
 		for (o = 0; o < n; o++)
 			l[m + o] = s2[o];
+			l[m + o] = '\0';
 	}
-	l[m + o] = '\0';
 	return (l);
 }
