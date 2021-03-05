@@ -5,7 +5,7 @@
 
 /**
  * _calloc - function that allocates memory for an array, using malloc.
- * @buffer: the address of memory to print
+ * @nmemb: the address of memory to print
  * @size: the size of the memory to print
  *
  * Return: Nothing.
@@ -15,7 +15,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
     unsigned int i;
 	char *ptr;
 
-	if ( nmemb == 0 && size == 0)
+	if ( nmemb == 0 || size == 0)
 		return (NULL);
 
 	ptr = malloc(size*nmemb);
