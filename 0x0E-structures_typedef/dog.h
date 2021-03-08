@@ -2,13 +2,13 @@
 #define DOG_H
 
 /**
- * typedef struct - dog
+ * struct dog - Define a new type struct dog with the following elements:
  */
 typedef struct dog
 {
-    char *name;
-    float age;
-    char *owner;
+char *name;
+float age;
+char *owner;
 } dog;
 
 #endif
