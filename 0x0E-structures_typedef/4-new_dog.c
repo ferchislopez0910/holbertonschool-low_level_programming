@@ -45,6 +45,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	(*pet).age = age;
 
 	for (n = 0; n < j; n++)
-		(*pet).owner[n] = name[n];
+		(*pet).owner[n] = owner[n];
 	return (pet);
 }
