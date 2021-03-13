@@ -1,8 +1,5 @@
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "3-calc.h"
+
 /**
 *op_add - returns the sum of a and b
 *@a: variable int
@@ -21,10 +18,12 @@ return (a + b);
 *@b: variable int
 *Return: int
 */
+
 int op_sub(int a, int b)
 {
 return (a - b);
 }
+
 /**
 *op_mul - returns the product of a and b
 *@a: int

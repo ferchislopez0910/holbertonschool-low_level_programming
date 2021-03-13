@@ -1,10 +1,8 @@
-#include <stdlib.h>
 #include "3-calc.h"
 
 /**
  * get_op_func - function that selects the correct function
  * @s: ptr
- * @i: int
  * Return: struct
  */
 
@@ -22,13 +20,13 @@ op_t ops[] = {
 
 int i = 0;
 
-while ((ops[i].op) != NULL && s[1] == '\0')
+while (ops[i].op != NULL)
+{
+	if (strcmp(s, ops[i].op) == 0)
 	{
-	if (*s == *(ops[i].op))
-		{
-			return (ops[i].f);
-		}
-	i++;
+		break;
 	}
-return (ops[1].f);
+	i++;
+}
+return (ops[i].f);
 }
