@@ -1,4 +1,3 @@
-\\This file should contain all the function prototypes and data structures used by the program. You can use this structure:
 #ifndef CALC_H
 #define CALC_H
 /**

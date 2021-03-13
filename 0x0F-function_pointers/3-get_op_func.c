@@ -1,21 +1,34 @@
-#include <stdio.h>
-#ifndef CALC_H
-#define CALC_H
+#include <stdlib.h>
+#include "3-calc.h"
+
 /**
- * 
- * 
- *
+ * get_op_func - function that selects the correct function
+ * @s: ptr
+ * @i: int
+ * Return: struct
  */
 
-int (*get_op_func(char *s))(int, int);
+int (*get_op_func(char *s))(int, int)
+
 {
-	 op_t ops[] = {
-        {"+", op_add},
-        {"-", op_sub},
-        {"*", op_mul},
-        {"/", op_div},
-        {"%", op_mod},
-        {NULL, NULL}
-    };
-    int i;
+op_t ops[] = {
+	{"+", op_add},
+	{"-", op_sub},
+	{"*", op_mul},
+	{"/", op_div},
+	{"%", op_mod},
+	{NULL, NULL},
+};
+
+int i = 0;
+
+while ((ops[i].op) != NULL && s[1] == '\0')
+	{
+	if (*s == *(ops[i].op))
+		{
+			return (ops[i].f);
+		}
+	i++;
+	}
+return (ops[1].f);
 }
