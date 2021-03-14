@@ -1,4 +1,4 @@
-**0x10-variadic_functions**
+## **0x10-variadic_functions**
 
 Resources
 * https://www.gnu.org/software/libc/manual/html_node/Variadic-Functions.html
