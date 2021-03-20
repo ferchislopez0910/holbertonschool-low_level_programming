@@ -1,6 +1,6 @@
-**0x10-variadic_functions**
+## **0x10-variadic_functions**
 
-* Resources
+Resources
 * https://www.gnu.org/software/libc/manual/html_node/Variadic-Functions.html
 * https://en.wikipedia.org/wiki/Stdarg.h
 * https://www.youtube.com/watch?v=1W4oyuOdXv8
