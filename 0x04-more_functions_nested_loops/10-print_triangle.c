@@ -1,6 +1,11 @@
 #include "holberton.h"
-void print_triangle(int size)
 
+/**
+ * print_triangle - function that prints a triangle, followed by a new line..
+ * @size: size of triangle.
+ * Return: Always 0.
+ */
+void print_triangle(int size)
 {
 	int row_counter, espacios, numeral;
 
