@@ -1,6 +1,6 @@
 <p align="center"><img src='https://marketing4ecommerce.net/wp-content/uploads/2018/06/GitHub-logo-2-imagen.jpg' alt='Banner' width=40%></p>
 
-# 0x12. C - Singly linked lists
+# 0x13. C - More Singly linked lists
 
 ## Singly linked lists
 
