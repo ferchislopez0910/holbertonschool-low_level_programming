@@ -1,5 +1,5 @@
 global main
-extern printf
+extern write
 
 	section .text
 main:
@@ -7,7 +7,7 @@ main:
 	mov rdi, format
 	mov rsi, message
 	mov rax, 0
-	call printf
+	call write
 	pop rbp
 	mov rax, 0
 	ret
