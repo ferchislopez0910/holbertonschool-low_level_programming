@@ -1,15 +1,17 @@
 global main
-extern write
 
-	section .text
+section .text
 main:
-	push rbp
-	mov rdi, format
-	mov rsi, message
-	mov rax, 0
-	call write
-	pop rbp
-	mov rax, 0
-	ret
-message: db "Hello, Holberton", 0
-format:	db "%s", 10, 0
+	mov rax, 1; write(
+	mov rdi, 1; STDOUT_FILENO,
+	mov rsi, msg; "Hello, Holberton\n",
+	mov rdx, msglen ; sizeof("Hello, Holberton\n")
+	syscall ; );
+
+	mov rax, 60 ; exit(
+	mov rdi, 0; EXIT_SUCCESS
+	syscall ; );
+
+section .data
+	msg: db "Hello, Holberton", 10
+	msglen: equ $ - msg
