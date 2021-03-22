@@ -1,57 +1,52 @@
 #include <stdio.h>
-#define COINS 9
-#define MAX 20
+#include <stdlib.h>
+#include <ctype.h>
+int main(int argc, char *argv[]);
 
-// All denominations of Indian Currency
-int coins[COINS] = { };
+/**
+* main - program that prints the minimum number of coins to make
+* change_ for an amount of money.
+* @argc: contador
+* @argv: matriz
+* Return: Always 0.
+*/
 
-void findMin(int cost)
-
+int main(int argc, char *argv[])
 {
-    int coinList[MAX] = { 0 };
-    int i, k = 0;
+    int cont, contador_array, cent = 0;
+    int change_[5] = {25, 10, 5, 2, 1};
+    
+    if (argc != 2)
+    {
+        printf("Error\n");
+        return (1);
+    }
+    cont = atoi(argv[1]);
 
-    for (i = COINS - 1; i >= 0; i--) {
-        while (cost >= coins[i]) {
-            cost -= coins[i];
-            coinList[k++] = coins[i];
+    if (cont < 0)
+    {
+        printf("0\n");
+        return (0);
+    }
+    else
+    {
+        for (contador_array = 0; contador_array < 5; contador_array++)
+        {
+            if (cont >= change_[contador_array])
+            {
+                cont -= change_[contador_array];
+                cent += 1;
+                if (cont >= change_[contador_array])
+                {
+                    contador_array--;
+                }
+                else if (cont == 0)
+                {
+                break;
+                }
+            }
         }
+    printf("%d\n", cent);
+    return (0);
     }
-
-
-
-    for (i = 0; i < k; i++) {
-
-        // Print
-
-        printf("%d ", coinList[i]);
-
-    }
-
-    return;
-
-}
-
-
-
-int main(void)
-
-{
-
-    // input value
-
-    int n = 93;
-
-
-
-    printf("Following is minimal number"
-
-           "of change for %d: ",
-
-           n);
-
-    findMin(n);
-
-    return 0;
-
 }
