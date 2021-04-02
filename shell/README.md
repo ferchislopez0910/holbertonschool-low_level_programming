@@ -15,7 +15,7 @@ To use _printf you must download the files contained in this repository done thi
 _gcc -Wall -Wextra -Werror -pedantic -Wno-format *.c_
  - done this you can print using
 
-**ejecutable** 
+**ejecutabl** 
 and there you go!.
 
 This is an example on how to use _shell_: 
