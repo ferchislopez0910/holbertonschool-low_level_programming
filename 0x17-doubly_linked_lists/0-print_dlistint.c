@@ -6,6 +6,7 @@
 */
 
 size_t print_dlistint(const dlistint_t *h)
+
 {
 	int number_nodos = 0;
 
@@ -15,7 +16,5 @@ size_t print_dlistint(const dlistint_t *h)
 		h = h->next;
 		number_nodos++;
 	}
-	
-
 	return (number_nodos);
 }
