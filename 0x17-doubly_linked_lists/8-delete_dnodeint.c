@@ -20,7 +20,7 @@ int delete_dnodeint_at_index(dlistint_t **headead, unsigned int index)
 		free(tmp);
 		return (1);
 	}
-	for (i = 0; i < index; i++)
+	for (i = 0; i < (index - 1); i++)
 	{
 		if (tmp->next == NULL)
 			return (-1);
