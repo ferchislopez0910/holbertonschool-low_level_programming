@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
 * insert_dnodeint_at_index - function that sum of all the data.
 * @h: Ptr that container the node
@@ -11,13 +10,12 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *tmp = *h;
-	dlistint_t *new;
-	dlistint_t *auxnew;
+	dlistint_t *new, *auxnew;
+	unsigned int i;
 
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
 		return (NULL);
-	
 	if (*h == NULL)
 	{
 		new->n = n;
@@ -26,7 +24,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		*h = new;
 		return (new);
 	}
-	if(idx == 0)
+	if (idx == 0)
 	{
 		new->n = n;
 		new->next = tmp->next;
@@ -36,8 +34,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	}
 	else
 	{
-		unsigned int i;
-
 		for (i = 0; i < idx; i++)
 		{
 			if (tmp == NULL)
