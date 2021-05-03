@@ -2,13 +2,13 @@
 
 /**
 * delete_dnodeint_at_index - delete the nodes
-* @headead: Ptr
+* @head: Ptr
 * @index: index
 * Return: Always EXIT_SUCCESS.
 */
-int delete_dnodeint_at_index(dlistint_t **headead, unsigned int index)
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *tmp = *headead;
+	dlistint_t *tmp = *head;
 	dlistint_t *new;
 	unsigned int i;
 
@@ -16,7 +16,7 @@ int delete_dnodeint_at_index(dlistint_t **headead, unsigned int index)
 		return (-1);
 
 	if (index == 0)
-	{	*headead = (*headead)->next;
+	{	*head = (*head)->next;
 		free(tmp);
 		return (1);
 	}
