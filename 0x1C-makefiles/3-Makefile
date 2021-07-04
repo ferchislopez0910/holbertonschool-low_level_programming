@@ -3,13 +3,12 @@ SRC= main.c holberton.c
 OBJ= $(patsubst %.c,%.o,$(SRC))
 NAME= holberton
 RM= rm -rf
-
-all= $(OBJ)
-		$(CC) $(OBJ) -o $(NAME)
-clean=
-		$(RM) *~ $(NAME)
-oclean=
-		$(RM) *.o
-fclean= clean oclean
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+clean:
+	$(RM) *~ $(NAME)
+oclean:
+	$(RM) *.o
+fclean: clean oclean
 	
-re= fclean all
+re: fclean all
