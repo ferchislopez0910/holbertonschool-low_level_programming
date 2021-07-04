@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-"""Create a function def island_perimeter
+"""
+Create a function def island_perimeter
 (grid): that returns the
-perimeter of the island described in grid"""from _typeshed import HasFileno
+perimeter of the island described in grid
+"""
 
 
 def island_perimeter(grid):
@@ -11,6 +13,8 @@ def island_perimeter(grid):
     """
     high = 0
     weigh = 0
+    counter = 0
+    cont2 = 0
 
     for high in range(len(grid)):
         for weigh in range(len(grid[high])):
